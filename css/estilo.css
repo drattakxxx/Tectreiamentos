@@ -21,7 +21,14 @@
 
         html{font-family: Arial, Helvetica, sans-serif; font-size: 1em;}
 
-        header{background-color: var(--corprojeto1); color: var(--branco); padding: 1%; position: fixed; width: 100%; margin: 0;}
+        header{background-color:
+             var(--corprojeto1);
+             color: var(--branco);
+             position: fixed;
+             width: 100%;
+             margin: 0;
+    
+            }
 
         nav{display: block; text-align: center; padding: 5px; font-size: 1.3em; word-spacing: 8px;}
 
@@ -52,7 +59,7 @@
         }
 
         /*Configuraçoes de Titulos Headlines*/
-        h1{font-size: 2em; margin-top: 3%;}
+        h1{font-size: 2em; margin-top: 1%; text-align: center; color: var(--corprojeto1);}
         h2{font-size: 1.5em;}
         h3{font-size: 1.5em;}
         h4{font-size: 1em;}
@@ -81,13 +88,13 @@
 
         }
 
-        /* Divs*/
-        .separador{margin-top: 8%;}
+        /*Configuraçoes de separadores com Divs*/
+        .separador{margin-top: 10%;}
         .separador-conteudo{margin-top: 0.5%;}
         /*configurações de Divs para Mobile*/
 
         @media(min-width: 320px) and (max-width: 1024px){
-            .separador{margin-top: 19%;}
+            .separador{margin-top: 33%;}
             .separador-conteudo{margin-top: 0.5%;}
         }
 
