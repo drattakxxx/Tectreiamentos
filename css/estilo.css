@@ -36,7 +36,7 @@
 
         a:hover{color: yellow;}
 
-        footer{background-color: var(--preto); color: var(--branco); padding: 1%; text-align: center; font-weight: bold;}
+        footer{background-color: var(--corprojeto1); color: var(--branco);  text-align: center; font-weight: bold;}
 
         body{background-color: var(--cinza);}
 
@@ -52,15 +52,28 @@
 
         aside{
              background-color: var(--branco);
-             padding: 1%; margin: auto;
+             padding: 1%;margin: auto; 
+             margin: auto;
              width: 90%;
              border-radius: 15px;
              box-shadow: 1px 1px 5px 0px ;
         }
 
+        /*Configuracoes de links de produtos*/
+
+        .menu{
+            color: var(--branco);
+            background-color: var(--corprojeto1);
+            padding: 5px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px var(--corprojeto6);
+            font-size: 1.3em;
+        }
+
+
         /*Configuraçoes de Titulos Headlines*/
-        h1{font-size: 2em; margin-top: 1%; text-align: center; color: var(--corprojeto1);}
-        h2{font-size: 1.5em;}
+        h1{font-size: 2.5em; margin-top: 1%; text-align: center; color: var(--corprojeto1);}
+        h2{font-size: 1.7em; color: var(--corprojeto1); text-align: center; text-shadow: 1px 1px 1px 2px;}
         h3{font-size: 1.5em;}
         h4{font-size: 1em;}
         h1, h2, h3, h4, h5, h6{padding-top: 0.5%; padding-bottom: 0.5%;}
@@ -68,6 +81,7 @@
         /*Configuraçoes de Imagens*/
 
         img{width: 100%; padding-top: 2%;}
+
         #topo{width: 400px; height: 130px; display: block; margin: auto;}
 
         @media(min-width:320px) and (max-width:1024px){
@@ -75,6 +89,15 @@
             #topo{width: 340px; height: 100px; display: block; margin: auto;}
 
         }
+
+        
+        #rodape{width: 150px; height: 150px; display: block; margin: auto;}
+
+        @media(min-width:320px) and (max-width:1024px){
+
+            #rodape{width: 100px; height: 100px; display: block; margin: auto;}
+        
+            }
 
         /*configuraçoes de paragrafos*/
 
@@ -100,17 +123,24 @@
 
         /*configuraçoes da grade de conteudo - grids*/
 
-        #grid-conteudo{background-color: var(--cinza);}
+        #grid-conteudo{background-color: var(--branco); padding: 0.5%;}
 
         .grid{
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             max-width: 1024px;
-            margin-top: auto;
+            margin: auto;
             gap: 2px;
         }
 
-        .grid div{background-color: var(--branco); text-align: center; padding: 2px;}
+        .grid div{
+              
+              background-color: var(--branco);
+              text-align: center;
+              padding: 2px;
+              box-shadow: 1px 1px 1px 2px var(--corprojeto6);
+              border-radius: 20px;
+            }
 
         /*configuraçoes para botoes de açao*/
 
