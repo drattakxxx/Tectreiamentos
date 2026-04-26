@@ -22,8 +22,8 @@
 
         html{font-family: Arial, Helvetica, sans-serif; font-size: 1em;}
 
-        header{background-color:
-             var(--corprojeto1);
+        header{
+             background: linear-gradient(var(--corprojeto6), var(--corprojeto1), var(--corprojeto1), var(--corprojeto1));
              color: var(--branco);
              position: fixed;
              width: 100%;
@@ -37,7 +37,12 @@
 
         a:hover{color: yellow;}
 
-        footer{background-color: var(--corprojeto1); color: var(--branco);  text-align: center; font-weight: bold;}
+        footer{
+              background: linear-gradient(var(--corprojeto1), var(--corprojeto1), var(--corprojeto1), var(--corprojeto6));
+              color: var(--branco);
+              text-align: center;
+              font-weight: bold;
+            }
 
         body{background-color: var(--cinza);}
 
@@ -84,10 +89,34 @@
         h2{
             font-size: 2.5em;
              color: var(--corprojeto1);
-             text-align: center;font-family: "Lily Script One", system-ui;
+             text-align: center;
              text-shadow: 1px 1px 1px var(--corprojeto6);
              text-shadow: 1px 1px 1px 2px;
+             font-style: italic;
             }
+
+            /*Configuracoes de Titulos para Celules*/
+            @media(min-width:320px) and (max-width:1024px){
+                 h1{
+             font-size: 2.5em;
+             margin-top: 1%;
+             text-align: center;
+             color: var(--corprojeto1);
+             
+             text-shadow: 1px 1px 1px var(--corprojeto6);
+    }
+        h2{
+            font-size: 2em;
+             color: var(--corprojeto1);
+             text-align: center;
+             font-family: "Lily Script One", system-ui;
+             text-shadow: 1px 1px 1px var(--corprojeto6);
+             text-shadow: 1px 1px 1px 2px;
+             font-style: italic;
+            }
+            
+            }
+
         h3{font-size: 1.5em;}
         h4{font-size: 1em;}
         h1, h2, h3, h4, h5, h6{padding-top: 0.5%; padding-bottom: 0.5%;}
@@ -128,6 +157,7 @@
         /*Configuraçoes de separadores com Divs*/
         .separador{margin-top: 10%;}
         .separador-conteudo{margin-top: 0.5%;}
+        .separador-conteudo-opçoes{margin-top: 8%;}
         /*configurações de Divs para Mobile*/
 
         @media(min-width: 320px) and (max-width: 1024px){
